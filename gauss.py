@@ -2,6 +2,7 @@ import numpy as np
 from readA import readMatrixA
 from readB import readB
 from triangulaire import lower_triangularization
+from resolution import resolution
 
 
 def Gauss():
@@ -14,8 +15,11 @@ def Gauss():
         print("det equal to 0, so cant solve this syteme")
     else:
         new_A, new_B = lower_triangularization(A, B, R)
-    # print(new_A)
-    # print(new_B)
+    X = resolution(A, B, R)
+    print(new_A)
+    print(new_B)
+    return X
 
 
-Gauss()
+X = Gauss()
+print("Result of this system is: {}".format(X))
