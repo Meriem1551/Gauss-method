@@ -14,8 +14,8 @@ def Gauss():
         print("det equal to 0, so cant solve this syteme")
     else:
         new_A, new_B = lower_triangularization(A, B, R)
-    print(new_A)
-    print(new_B)
+    # print(new_A)
+    # print(new_B)
 
 
 Gauss()
