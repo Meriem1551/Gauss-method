@@ -5,7 +5,7 @@ from triangulaire import lower_triangularization
 from resolution import resolution
 
 
-def Gauss():
+def Gauss_Elimination():
     R = int(input("Enter the number of rows: "))
     N = R * R
     A = readMatrixA(R)
@@ -19,5 +19,5 @@ def Gauss():
         return X
 
 
-X = Gauss()
+X = Gauss_Elimination()
 print("Result of this system is: {}".format(X))
