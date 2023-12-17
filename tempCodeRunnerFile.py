@@ -18,9 +18,9 @@ def Gauss_Elimination():
         new_A, new_B = lower_triangularization(A, B, R)
         X = resolution(new_A, new_B, R)
         V= valeur_propre(new_A,R)
-        return X , V
+        return X, V
 
 
-X,V= Gauss_Elimination()
+X,V = Gauss_Elimination()
 print("Result of this system is: {}".format(X))
 print("Result is: {}".format(V))
